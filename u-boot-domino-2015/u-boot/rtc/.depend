@@ -1,0 +1,31 @@
+date.o: date.c /data2/uboot/u-boot-domino-2015/u-boot/include/common.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/config.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/configs/ap121.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/configs/ar7240.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/cmd_confdefs.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/bitops.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/bitops.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/types.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/config.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/posix_types.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/stddef.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/posix_types.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/types.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/byteorder.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/byteorder/big_endian.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/byteorder/swab.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/byteorder/generic.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/sgidefs.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/system.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/ptrace.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/isadep.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/linux/string.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/string.h \
+ /data2/openwrt1407/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/lib/gcc/mips-openwrt-linux-uclibc/4.8.3/include/stdarg.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/flash.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/image.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/u-boot.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/global_data.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/asm/regdef.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/command.h \
+ /data2/uboot/u-boot-domino-2015/u-boot/include/rtc.h
