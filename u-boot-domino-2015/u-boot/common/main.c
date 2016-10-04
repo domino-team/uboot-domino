@@ -343,29 +343,6 @@ int calibration_status(void){
 		ret=-1;
 	}
 
-
-//	if(!has_art_cal){ //没有发现刚刚校准后的art
-//		if(has_art_final){ //应该已经校准
-//			printf("Calibration ready. Booting...\n");
-//			ret=1;
-//		}else{	//没有刚刚校准的art，也没有最后的art，应该是出错了！
-//			printf("cannot find art, please calibrate!!!!!!!!!!\n");
-//			ret=-1;
-//		}
-//	}else{ //发现刚刚校准的art
-//		printf(" _____________________________________________________________ \n");
-//		printf(" | 1. Device just calibrated, need to copy art.%14c|\n",' ');
-//		if(has_art_final){
-//			printf(" |%10cOverwriting...%35c|\n",' ',' ');
-//		}else{
-//			printf(" |%10cCopy it to final... %29c|\n",' ',' ');
-//		}
-//		rc=run_command("erase 0x9fff0000 +0x10000",0);
-//		if(rc==1) rc=run_command("cp.b 0x9f3f1000 0x80060000 0x0f000",0);
-//		if(rc==1) rc=run_command("cp.b 0x80060000 0x9fff1000 0xf000",0);
-//		if(rc==1) printf(" |%6cdone%49c|\n",' ',' '); else printf(" |%6cfailed%47c|\n",' ',' ');
-//		ret=0;
-//	}
 	return ret;
 }
 
@@ -378,27 +355,7 @@ int upgrade_firmware(void){
 	printf("  ___________________________________________________________ \n");
 	printf(" | ** Writing MAC info%39c|\n",' ');
 	rc=run_command("run lc",0);
-//	rc=run_command("tftp 0x81000000 config.bin",0);
-//	if(rc==1) rc=run_command("cp.b 0x9fff1000 0x80060000 0xf000 && erase 0x9fff0000 +0x10000 && cp.b 0x81000000 0x9fff0000 $filesize && cp.b 0x80060000 0x9fff1000 0xf000",0);
-//	if(rc==1) rc=run_command("cp.b 0x9fff1000 0x80060000 0xf000",0);
-//	if(rc==1) rc=run_command("erase 0x9fff0000 +0x10000",0);
-//	if(rc==1) rc=run_command("cp.b 0x81000000 0x9fff0000 $filesize",0);
-//	if(rc==1) rc=run_command("cp.b 0x80060000 0x9fff1000 0xf000",0);
 
-//	if(rc==1) {
-//		printf(" |%6cdone%49c|\n",' ',' ');
-//	}else{
-//		printf(" |%6cfailed%47c|\n",' ',' ');
-//	}
-	//write firmware
-//	printf(" | 3. Writing firmware%39c|\n",' ');
-//	all_led_on(); //flash red, turn off green, off/of is reversed
-//	if(rc==1) rc=run_command("tftp 0x81000000 openwrt-domino.bin",0);
-//	//red_led_off(); //flash green
-//	if(rc==1) rc=run_command("erase 0x9f050000 +0x7f0000",0);
-//	all_led_on();
-//	//red_led_on(); //red on only
-//	if(rc==1) rc=run_command("cp.b 0x81000000 0x9f050000 0x7f0000",0);
 	if(rc==1){
 		run_command("run lf",0);
 	}
