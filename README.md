@@ -16,10 +16,11 @@ Extract the bz2 file into one folder, e.g. /mytool/
 ## Compile
 
 clone the uboot source code
+
 ```
 git clone https://github.com/domino-team/uboot-domino.git uboot
 cd uboot/u-boot-domino-2015
-``
+```
 
 Now, edit Makefile
 
@@ -28,14 +29,14 @@ change the following line (4th line)
 export TOOLPATH=$(BUILD_TOPDIR)/../../openwrt1407/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/
 ```
 to
-``
+```
 export TOOLPATH=$/mytool/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.15/
-``
+```
 Be sure to use our absolute path. If you download a different sdk, the path name may be different. Now type
 
 ```
 make
-``
+```
 
 After the compile finished, you should have your uboot binary in bin/uboot_for_domino.bin
 
@@ -48,7 +49,6 @@ After the compile finished, you should have your uboot binary in bin/uboot_for_d
 First, get a USB->UARt adapter
 
 During the uboot boot, you need to type `gl` to stop uboot booting.
-
 
 
 
