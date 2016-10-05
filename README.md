@@ -42,7 +42,13 @@ After the compile finished, you should have your uboot binary in bin/uboot_for_d
 
 # Flash it to your router
 
+The general process of changing uboot is:
+1. connect to router using USB uart adapter
+2. enter uboot console
+3. setup a tftp server
+4. run command `run lu`
 
+Please refer to http://www.gl-inet.com/docs/diy/uboot/ for more details. 
 
 # Using the uboot
 
